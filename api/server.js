@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const port = 3000;
 const cors = require('cors');
 
 
@@ -72,3 +73,5 @@ app.get('/second', (req, res) => {
 app.listen(port, () => {
   console.log(`服务已启动，访问地址：http://localhost:${port}`);
 });
+
+export default app;
