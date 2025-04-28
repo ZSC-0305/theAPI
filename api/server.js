@@ -14,7 +14,7 @@ app.use((req,res,next)=>{
   next()
 })
 
-app.get('/first', (req, res) => {
+app.get('/img', (req, res) => {
   const images = [
     "https://www.islide.cc/_next/static/media/homeRecommend_1.54f15d40.png",
     "https://www.islide.cc/_next/static/media/homeRecommend_2.ba674994.png",
@@ -28,7 +28,7 @@ app.get('/first', (req, res) => {
   res.success(images)
 });
 
-app.get('/second', (req, res) => {
+app.get('/content', (req, res) => {
   const partners = [
     {
       title: "夸克文档",
