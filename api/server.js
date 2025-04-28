@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
-const port = 3000;
 const cors = require('cors');
+
+
 app.use(cors());
 app.use((req,res,next)=>{
   res.success = (data)=>{
@@ -11,6 +12,7 @@ app.use((req,res,next)=>{
   }
   next()
 })
+
 app.get('/first', (req, res) => {
   const images = [
     "https://www.islide.cc/_next/static/media/homeRecommend_1.54f15d40.png",
